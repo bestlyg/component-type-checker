@@ -1,6 +1,6 @@
 {
-  "name": "@component-type-checker/sdk",
-  "version": "0.0.1",
+  "name": "@component-type-checker/sdk1",
+  "version": "0.0.2",
   "private": false,
   "author": "bestlyg@foxmail.com",
   "main": "./src/index.ts",

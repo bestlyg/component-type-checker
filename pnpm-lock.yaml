@@ -8,7 +8,17 @@ importers:
 
   .: {}
 
-  packages/app: {}
+  packages/app:
+    dependencies:
+      '@component-type-checker/button':
+        specifier: 0.0.2
+        version: 0.0.2
+      '@component-type-checker/components':
+        specifier: 0.0.1
+        version: 0.0.1(@component-type-checker/button@0.0.2)
+      '@component-type-checker/sdk':
+        specifier: 0.0.1
+        version: 0.0.1
 
   packages/button: {}
 
@@ -16,7 +26,7 @@ importers:
     devDependencies:
       '@component-type-checker/button':
         specifier: 0.0.2
-        version: link:../button
+        version: 0.0.2
 
   packages/sdk:
     dependencies:
@@ -25,10 +35,36 @@ importers:
         version: 0.0.1
       '@component-type-checker/components':
         specifier: 0.0.1
-        version: link:../components
+        version: 0.0.1(@component-type-checker/button@0.0.1)
 
 packages:
 
   /@component-type-checker/button@0.0.1:
     resolution: {integrity: sha512-P6ItmuandMG403AuRspB/xX4Wh3QCsoXYQ/uF5kxdt4RUlbyWXzoq4HF2O/bOzMeXyHizvrra72mjQb7UfGprA==}
+    dev: false
+
+  /@component-type-checker/button@0.0.2:
+    resolution: {integrity: sha512-gW43gS1JQ2Stj2IA/q4zFtCMOPd4S1gs3BKVrKu/U6d0HdyC0DE89SVMt2QvzBvOIdGA0fqCM+WN7+CVBGGRrQ==}
+
+  /@component-type-checker/components@0.0.1(@component-type-checker/button@0.0.1):
+    resolution: {integrity: sha512-GL0BLOa5BoCUp3KPde8VH+gqt05aWFwx4u61AfUhdXx8YaEfAREDMPBRVMn3ts0JVY/gY9UGUpRYsJ+wq2TmvA==}
+    peerDependencies:
+      '@component-type-checker/button': '*'
+    dependencies:
+      '@component-type-checker/button': 0.0.1
+    dev: false
+
+  /@component-type-checker/components@0.0.1(@component-type-checker/button@0.0.2):
+    resolution: {integrity: sha512-GL0BLOa5BoCUp3KPde8VH+gqt05aWFwx4u61AfUhdXx8YaEfAREDMPBRVMn3ts0JVY/gY9UGUpRYsJ+wq2TmvA==}
+    peerDependencies:
+      '@component-type-checker/button': '*'
+    dependencies:
+      '@component-type-checker/button': 0.0.2
+    dev: false
+
+  /@component-type-checker/sdk@0.0.1:
+    resolution: {integrity: sha512-XZXmss2xbSgLTgPRdvvX9Zhem3BPca071dQQnoh3IbUwqZtDgzbCM9OUITKFMF4TQaWJlV0ojnKLMCd5yljgXg==}
+    dependencies:
+      '@component-type-checker/button': 0.0.1
+      '@component-type-checker/components': 0.0.1(@component-type-checker/button@0.0.1)
     dev: false

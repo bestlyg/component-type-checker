@@ -1,5 +1,2 @@
-import { createButton, Button } from "@component-type-checker/components";
-
-const button: Button = createButton();
-
-console.log(button);
+import { Button } from "@component-type-checker/sdk";
+import { createButton } from "@component-type-checker/button";

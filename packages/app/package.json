@@ -1,13 +1,9 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@component-type-checker/button": "0.0.2",
+    "@component-type-checker/sdk": "0.0.1",
+    "@component-type-checker/components": "0.0.1"
+  }
 }

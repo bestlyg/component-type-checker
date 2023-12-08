@@ -1,5 +1,3 @@
-import { createButton } from "@component-type-checker/components";
-
 export { Button, createButton } from "@component-type-checker/components";
 
-const b = createButton();
+export const VERSION = "0.0.2";
