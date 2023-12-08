@@ -17,8 +17,8 @@ importers:
         specifier: 0.0.1
         version: 0.0.1(@component-type-checker/button@0.0.2)
       '@component-type-checker/sdk':
-        specifier: 0.0.1
-        version: 0.0.1
+        specifier: 0.0.2
+        version: link:../sdk
 
   packages/button: {}
 
@@ -60,11 +60,4 @@ packages:
       '@component-type-checker/button': '*'
     dependencies:
       '@component-type-checker/button': 0.0.2
-    dev: false
-
-  /@component-type-checker/sdk@0.0.1:
-    resolution: {integrity: sha512-XZXmss2xbSgLTgPRdvvX9Zhem3BPca071dQQnoh3IbUwqZtDgzbCM9OUITKFMF4TQaWJlV0ojnKLMCd5yljgXg==}
-    dependencies:
-      '@component-type-checker/button': 0.0.1
-      '@component-type-checker/components': 0.0.1(@component-type-checker/button@0.0.1)
     dev: false

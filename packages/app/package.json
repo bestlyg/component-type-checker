@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@component-type-checker/button": "0.0.2",
-    "@component-type-checker/sdk": "0.0.1",
+    "@component-type-checker/sdk": "0.0.2",
     "@component-type-checker/components": "0.0.1"
   }
 }
