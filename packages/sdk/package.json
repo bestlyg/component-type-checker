@@ -1,0 +1,16 @@
+{
+  "name": "@component-type-checker/sdk",
+  "version": "0.0.1",
+  "private": false,
+  "author": "bestlyg@foxmail.com",
+  "main": "./src/index.ts",
+  "scripts": {},
+  "files": [
+    "package.json",
+    "src"
+  ],
+  "dependencies": {
+    "@component-type-checker/components": "0.0.1",
+    "@component-type-checker/button": "0.0.1"
+  }
+}

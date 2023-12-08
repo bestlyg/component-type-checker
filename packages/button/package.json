@@ -1,0 +1,12 @@
+{
+  "name": "@component-type-checker/button1",
+  "version": "0.0.2",
+  "private": false,
+  "author": "bestlyg@foxmail.com",
+  "main": "./src/index.ts",
+  "scripts": {},
+  "files": [
+    "package.json",
+    "src"
+  ]
+}

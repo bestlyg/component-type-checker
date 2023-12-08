@@ -1,0 +1,12 @@
+{
+  "name": "component-type-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "pnpm -r exec rm -rf node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
