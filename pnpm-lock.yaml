@@ -19,6 +19,9 @@ importers:
       '@component-type-checker/sdk':
         specifier: 0.0.2
         version: link:../sdk
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
 
   packages/button: {}
 
@@ -60,4 +63,10 @@ packages:
       '@component-type-checker/button': '*'
     dependencies:
       '@component-type-checker/button': 0.0.2
+    dev: false
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: false

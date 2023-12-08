@@ -1,9 +1,13 @@
 {
   "name": "app",
   "version": "1.0.0",
+  "scripts": {
+    "start": "tsc"
+  },
   "dependencies": {
     "@component-type-checker/button": "0.0.2",
+    "@component-type-checker/components": "0.0.1",
     "@component-type-checker/sdk": "0.0.2",
-    "@component-type-checker/components": "0.0.1"
+    "typescript": "^5.3.3"
   }
 }
